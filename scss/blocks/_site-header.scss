@@ -1,0 +1,54 @@
+.site-header {
+  background-color: #fff;
+}
+.site-header__wrapper {
+  position: relative;
+  padding-top: 21px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.site-header__top {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__item  {
+  text-decoration: none;
+  & h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #272727;
+    margin-bottom: 3px;
+  }
+  & p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #272727;
+  }
+}
+
+.contact-box {
+  position: relative;
+}
+.contact-box::before {
+  width: 29px;
+  height: 29px;
+  margin-right: 7px;
+  position: absolute;
+  left: 100%;
+  background-image: url(../../img/phone.png);
+}
+
+.contact-box {
+  @include retina-bg {
+    background-image: url(../../img/phone@2x.png);
+  }
+}
