@@ -1,4 +1,6 @@
 .site-header {
+  width: 100%;
+  position: fixed;
   background-color: #fff;
 }
 .site-header__wrapper {
@@ -15,7 +17,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 
 .site-logo {
@@ -56,11 +58,13 @@
   margin-right: 7px;
   position: absolute;
   right: 100%;
+  top: 50%;
   background-image: url(../../img/phone.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
   content: "";
+  transform: translateY(-50%);
 }
 
 .working-table {
@@ -72,17 +76,23 @@
   height: 29px;
   margin-right: 7px;
   position: absolute;
+  top: 50%;
   right: 100%;
   background-image: url(../../img/clock.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
   content: "";
+  transform: translateY(-50%);
 }
 
 .site-nav {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
+  padding: 20px 30px;
   background: #0055B8;
   border-radius: 5px;
   bottom: 0;
@@ -91,8 +101,57 @@
 
 .nav-list {
   margin: 0;
-  padding: 20px 30px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   list-style: none;
+}
+
+.nav-list__item {
+  margin-right: 35px;
+}
+
+.nav-list__item:last-child {
+  margin-right: 0;
+}
+
+.nav-list__link {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.nav-list__link:last-child {
+  margin-right: 0;
+}
+
+.nav-list__link:hover {
+  color: #FFD600;
+}
+
+.nav-list__link:active {
+  opacity: .6;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+
+.social {
+  display: block;
+  margin-right: 13px;
+}
+.social:last-child{
+  margin-right: 0;
+}
+
+.social:hover {
+  opacity: .8;
+}
+.social:active {
+  opacity: .6;
 }
