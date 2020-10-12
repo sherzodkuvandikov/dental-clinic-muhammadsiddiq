@@ -4,6 +4,7 @@
   background-color: #fff;
 }
 .site-header__wrapper {
+  width: 100%;
   position: relative;
   padding-top: 21px;
   display: flex;
@@ -113,6 +114,7 @@
   background: #0055B8;
   border-radius: 5px;
   bottom: 0;
+  left: 0px;
   transform: translateY(50%);
 }
 
@@ -154,6 +156,7 @@
 
 .socials {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   // justify-content: center;
 }
@@ -171,4 +174,33 @@
 }
 .social:active {
   opacity: .6;
+}
+
+@include breakpoint-down (1025px) {
+  .site-header__top {
+    display: none;
+  }
+  .site-header__wrapper {
+    padding: 0;
+  }
+  .site-nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 22px;
+    top: 0;
+    transform: translateY(0);
+    border-radius: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .site-nav::before {
+    width: 140px;
+    height: 21px;
+    background-image: url(../../img/site-logo-mobile.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
 }
