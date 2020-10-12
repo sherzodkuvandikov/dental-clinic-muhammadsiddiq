@@ -1,0 +1,20 @@
+.primary-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: none;
+  border: none;
+  outline: none;
+  background: #0055B8;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 24px 110px;
+  text-transform: uppercase;
+}
+.primary-btn:hover {
+  opacity: .8;
+}
+.primary-btn:active {
+  opacity: .6;
+}

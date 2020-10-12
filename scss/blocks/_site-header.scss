@@ -1,7 +1,11 @@
 .site-header {
   width: 100%;
   position: fixed;
+  top: 0;
   background-color: #fff;
+}
+.mobile-header {
+  display: none;
 }
 .site-header__wrapper {
   width: 100%;
@@ -195,6 +199,9 @@
   }
 
   .site-nav::before {
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
     width: 140px;
     height: 21px;
     background-image: url(../../img/site-logo-mobile.png);
@@ -202,5 +209,57 @@
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
+    transform: translateY(0%);
   }
+  .socials {
+    margin-left: 50px;
+  }
+}
+
+@include breakpoint-down (700px) {
+  .site-nav::before {
+    display: none;
+  }
+  .site-nav-nojs {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 0;
+    flex-direction: column;
+  }
+  .site-nav__list {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+  }
+  .nav-list__item {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .nav-list__link {
+    display: block;
+    background: #4686cf;
+    border-top: 1px solid #FFD600;
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .mobile-header {
+    width: 100%;
+    padding: 23px 20px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-header button {
+    border: none;
+    background: none;
+    color: #fff;
+  }
+
 }
