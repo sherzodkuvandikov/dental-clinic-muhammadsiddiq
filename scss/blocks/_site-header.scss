@@ -199,7 +199,11 @@
 }
 
 @include breakpoint-down (1024px) {
+  .mobile-nav {
+    display: flex;
+  }
   body {
+
     margin-top: 76px;
   }
   .site-header__wrapper {
