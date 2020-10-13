@@ -1,7 +1,7 @@
-const hamburger = document.querySelector(".close-btn");
+const hamburger = document.querySelector(".gamburger-menu");
 const navmenu = document.querySelector(".site-nav-js");
 
 
 hamburger.addEventListener("click", () => {
-    navmenu.classList.toggle("site-nav-js--open");
+    navmenu.classList.toggle("site-nav-js--close");
 })
