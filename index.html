@@ -28,15 +28,17 @@
         </div>
       </div>
 
-      <nav class="site-nav site-nav-js">
+      <nav class="site-nav site-nav-js site-nav-js--close">
 
-        <a href="index.html" class="site-logo-link">
-          <img src="img/site-logo-mobile.png" srcset="img/site-logo-mobile.png 1x, img/site-logo-mobile@2x.png 2x" alt="site logo mobile">
-        </a>
+        <div class="mobile-nav">
+          <a class="site-logo-link" href="index.html">
+            <img src="img/site-logo-mobile.png" srcset="img/site-logo-mobile.png 1x, img/site-logo-mobile@2x.png 2x" alt="site logo mobile">
+          </a>
+          <button class="gamburger-menu btn">
+            <img src="img/gamburger.svg" width="25" height="18" alt="hamburger menu">
+          </button>
+        </div>
 
-        <button class="gamburger-btn gamburger-btn--open">
-          <img src="img/gamburger.svg" alt="">
-        </button>
         <ul class="site-nav__list nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link" href="#services">Services</a>
@@ -72,7 +74,7 @@
 
 
   <section class="hero-section">
-    <h1 class="visually-hidden">hero section</h1>
+    <h2 class="visually-hidden">hero section</h2>
 
     <div class="hero__wrapper container">
       <div class="hero__left-content hero-content">
@@ -93,18 +95,18 @@
 
       <div class="hero-section__bottom hero-bottom">
         <div class="hero-bottom__item">
-          <img src="  img/teeth.png" srcset="img/teeth.png 1x, img/teeth.png2x" aria-hidden="true">
+          <img src="img/teeth.png" srcset="img/teeth.png 1x, img/teeth.png 2x" aria-hidden="true" alt="img">
           <h3>treamment</h3>
           <p>All types of dental treatment are carried out using the most modern technologies.</p>
         </div>
 
         <div class="hero-bottom__item">
-          <img src="  img/teeth.png" srcset="img/teeth.png 1x, img/teeth.png2x" aria-hidden="true">
+          <img src="img/teeth.png" srcset="img/teeth.png 1x, img/teeth.png 2x" aria-hidden="true" alt="img">
           <h3>treamment</h3>
           <p>All types of dental treatment are carried out using the most modern technologies.</p>
         </div>
 
-        <form class="hero-bottom__item appointment-form" method="POST">
+        <form class="appointment-form" method="POST">
           <h3 class="appointment-form__heading">Appointment</h3>
           <input class="appointment__input" type="tel" required placeholder="Phone">
           <input class="appointment__input" type="text" placeholder="Name" required>
@@ -112,7 +114,7 @@
           <div class="appointment__agreement agreement-box">
             <span class="appointment__alert">I give my consent to the storage
               and processing of personal data</span>
-            <input class="agreement__input visually-hidden" type="checkbox" name="i-agree" id="agreement" checked>
+            <input class="agreement__input visually-hidden" type="checkbox" name="i-agree" id="agreement" checked required>
             <label class="agreement__label" for="agreement"></label>
           </div>
         </form>
@@ -120,7 +122,7 @@
     </div>
   </section>
 
-  <section class="services">
+   <section class="services">
     <div class="services__wrapper container">
       <hr class="services__hr">
       <h2 class="secvices__heading">services</h2>
@@ -131,7 +133,7 @@
       <ul class="services__slider">
 
         <li class="services-slider__item service-slide">
-          <img services-slide__img src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true">
+          <img class="services-slide__img" src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true" alt="img">
           <h3 class="service-slide__heading">treamment</h3>
           <hr class="service-slider__hr">
           <del>5000$</del>
@@ -139,7 +141,7 @@
         </li>
 
         <li class="services-slider__item service-slide">
-          <img services-slide__img src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true">
+          <img class="services-slide__img" src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true" alt="img">
           <h3 class="service-slide__heading">treamment</h3>
           <hr class="service-slider__hr">
           <del>5000$</del>
@@ -147,7 +149,7 @@
         </li>
 
         <li class="services-slider__item service-slide">
-          <img services-slide__img src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true">
+          <img class="services-slide__img" src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true" alt="img">
           <h3 class="service-slide__heading">treamment</h3>
           <hr class="service-slider__hr">
           <del>5000$</del>
@@ -155,7 +157,7 @@
         </li>
 
         <li class="services-slider__item service-slide">
-          <img services-slide__img src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true">
+          <img class="services-slide__img" src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true" alt="img">
           <h3 class="service-slide__heading">treamment</h3>
           <hr class="service-slider__hr">
           <del>5000$</del>
@@ -163,12 +165,13 @@
         </li>
 
         <li class="services-slider__item service-slide">
-          <img services-slide__img src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true">
+          <img class="services-slide__img" src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true" alt="img">
           <h3 class="service-slide__heading">treamment</h3>
           <hr class="service-slider__hr">
           <del>5000$</del>
           <p>3100$</p>
         </li>
+
       </ul>
       <button class="slide__btn-left btn">
         <img src="img/left-arrow.svg" alt="to left">
@@ -182,6 +185,6 @@
 
 
 
-  <script type="text/javascript"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
