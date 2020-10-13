@@ -8,32 +8,35 @@
 </head>
 <body>
 
-  <!-- Bismillah ! -->
+  <!-- Site name ! -->
   <h1 class="visually-hidden">Dental Clinics</h1>
-  <header class="site-header">
+
+
+  <header class="site-header ">
     <div class="site-header__wrapper container">
       <div class="site-header__top">
         <a href="tel:+73422162227" class="site-header__item contact-box">
           <h4>contact us</h4>
           <p>+7(342)216-22-27</p>
         </a>
-
         <a class="site-header__item site-logo" href="index.html">
           <img src="img/site-logo.png" srcset="img/site-logo.png 1x,img/site-logo.png 2x" alt="site logo" width="103" height="56">
         </a>
-
         <div class="site-header__item working-table">
           <h4>Open now</h4>
           <p>Today we work until 19.00</p>
         </div>
-
       </div>
 
-      <nav class="site-nav site-nav-nojs">
-        <header class="mobile-header">
-          <img class="site-logo-mobile" src="img/site-logo-mobile.png" srcset="img/site-logo-mobile.png 1x, img/site-logo-mobile@2x.png 2x" alt="site logo">
-          <button >X</button>
-        </header>
+      <nav class="site-nav site-nav-js">
+
+        <a href="index.html" class="site-logo-link">
+          <img src="img/site-logo-mobile.png" srcset="img/site-logo-mobile.png 1x, img/site-logo-mobile@2x.png 2x" alt="site logo mobile">
+        </a>
+
+        <button class="gamburger-btn gamburger-btn--open">
+          <img src="img/gamburger.svg" alt="">
+        </button>
         <ul class="site-nav__list nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link" href="#services">Services</a>
@@ -51,9 +54,10 @@
             <a class="nav-list__link" href="#contacts">Contacts</a>
           </li>
         </ul>
+
         <div class="site-nav__item socials">
           <a class="social vk-link" href="#">
-            <img class="vk-logo" src="img/vk.png" srcset="img/vk.png 1x, img/vk@2x.png" width="28" height="28" alt="vk logo">
+            <img class="vk-logo" src="img/vk.png" srcset="img/vk.png 1x, img/vk@2x.png 2x" width="28" height="28" alt="vk logo">
           </a>
           <a class="social instagram-link" href="#">
             <img class="instagram-logo" src="img/instagram.png" srcset="img/instagram.png 1x, img/instagram@2x.png 2x" width="16" height="16" alt="vk logo">
@@ -62,22 +66,122 @@
             <img class="twitter-logo" src="img/twetter.png" srcset="img/twetter.png 1x, img/twetter@2x.png 2x" width="16" height="16" alt="vk logo">
           </a>
         </div>
-
       </nav>
-
     </div>
   </header>
 
 
-  <section class="hero-scetion">
+  <section class="hero-section">
+    <h1 class="visually-hidden">hero section</h1>
+
     <div class="hero__wrapper container">
-      <div class="hero__left-side">
-        <p>Modern technology and expert-class dentists</p>
+      <div class="hero__left-content hero-content">
+        <span>Modern technology and expert-class dentists</span>
         <h2>get a brilliant smile
           for every day</h2>
-          <a class="primary-btn" href="#">get</a>
+        <a href="#" class="primary-btn hero__link">get</a>
+      </div>
+
+      <div class="hero-section__controller-btn">
+        <button class="primary-btn btn-prev">
+          <img src="img/btn-prev.svg" width="42" height="70" alt="">
+        </button>
+        <button class="primary-btn btn-next">
+          <img src="img/btn-next.svg" width="70" height="70" alt="">
+        </button>
+      </div>
+
+      <div class="hero-section__bottom hero-bottom">
+        <div class="hero-bottom__item">
+          <img src="  img/teeth.png" srcset="img/teeth.png 1x, img/teeth.png2x" aria-hidden="true">
+          <h3>treamment</h3>
+          <p>All types of dental treatment are carried out using the most modern technologies.</p>
+        </div>
+
+        <div class="hero-bottom__item">
+          <img src="  img/teeth.png" srcset="img/teeth.png 1x, img/teeth.png2x" aria-hidden="true">
+          <h3>treamment</h3>
+          <p>All types of dental treatment are carried out using the most modern technologies.</p>
+        </div>
+
+        <form class="hero-bottom__item appointment-form" method="POST">
+          <h3 class="appointment-form__heading">Appointment</h3>
+          <input class="appointment__input" type="tel" required placeholder="Phone">
+          <input class="appointment__input" type="text" placeholder="Name" required>
+          <button class="primary-btn appointment__btn" type="submit">Appointment</button>
+          <div class="appointment__agreement agreement-box">
+            <span class="appointment__alert">I give my consent to the storage
+              and processing of personal data</span>
+            <input class="agreement__input visually-hidden" type="checkbox" name="i-agree" id="agreement" checked>
+            <label class="agreement__label" for="agreement"></label>
+          </div>
+        </form>
       </div>
     </div>
   </section>
+
+  <section class="services">
+    <div class="services__wrapper container">
+      <hr class="services__hr">
+      <h2 class="secvices__heading">services</h2>
+      <p class="services__txt">We provide a wide range of services from treatment to prosthetics.
+        Therefore, you do not need to go anywhere else.</p>
+    </div>
+    <div class="services-slider__wrapper container">
+      <ul class="services__slider">
+
+        <li class="services-slider__item service-slide">
+          <img services-slide__img src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true">
+          <h3 class="service-slide__heading">treamment</h3>
+          <hr class="service-slider__hr">
+          <del>5000$</del>
+          <p>3100$</p>
+        </li>
+
+        <li class="services-slider__item service-slide">
+          <img services-slide__img src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true">
+          <h3 class="service-slide__heading">treamment</h3>
+          <hr class="service-slider__hr">
+          <del>5000$</del>
+          <p>3100$</p>
+        </li>
+
+        <li class="services-slider__item service-slide">
+          <img services-slide__img src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true">
+          <h3 class="service-slide__heading">treamment</h3>
+          <hr class="service-slider__hr">
+          <del>5000$</del>
+          <p>3100$</p>
+        </li>
+
+        <li class="services-slider__item service-slide">
+          <img services-slide__img src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true">
+          <h3 class="service-slide__heading">treamment</h3>
+          <hr class="service-slider__hr">
+          <del>5000$</del>
+          <p>3100$</p>
+        </li>
+
+        <li class="services-slider__item service-slide">
+          <img services-slide__img src="img/dental-treatment.jpg" srcset="img/dental-treatment.jpg 1x, img/dental-treatment@2x.jpg 2x" aria-hidden="true">
+          <h3 class="service-slide__heading">treamment</h3>
+          <hr class="service-slider__hr">
+          <del>5000$</del>
+          <p>3100$</p>
+        </li>
+      </ul>
+      <button class="slide__btn-left btn">
+        <img src="img/left-arrow.svg" alt="to left">
+      </button>
+      <button class="slide__btn-right btn">
+        <img src="img/right-arrow.svg" alt="to">
+      </button>
+    </div>
+  </section>
+
+
+
+
+  <script type="text/javascript"></script>
 </body>
 </html>
