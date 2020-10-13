@@ -29,9 +29,11 @@
   height: 56px;
   margin-bottom: 16px;
 }
+
 .site-logo:hover {
   opacity: .8;
 }
+
 .site-logo:active {
   opacity: .6;
 }
@@ -119,6 +121,10 @@
   bottom: 0;
   left: 0px;
   transform: translateY(50%);
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .site-logo-link {
@@ -215,6 +221,9 @@
 }
 
 @include breakpoint-down (886px) {
+  .mobile-nav {
+    display: flex;
+  }
   .nav-list__item {
     margin-right: 15px;
   }
